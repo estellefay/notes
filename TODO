@@ -1,0 +1,6 @@
+- Ajouter le middleware des accès aux routes
+- Pour vérifier si password1 et password2 correspondent :
+   - ajouter un eventlisetener sur le bouton "Valider"
+   - comparer les values des inputs
+   - si c'est identique, submit le formulaire
+   - sinon, modal ou alertbox et reset des values
