@@ -133,6 +133,8 @@
         'student_id' => 1,
         'lesson_id'  => 2
     ],
+- pour ajouter un created_at
+   - Carbon::new('Y-m-d H:i:s');
 
 
 ## Tables intermédiaires
