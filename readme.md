@@ -3,6 +3,14 @@
 
 ## less
 - http://lesscss.org/
+- https://laravel.com/docs/5.6/mix#less
+- dans webpack.mix.js
+   - mix.less('resources/assets/less/app.less', 'public/css');
+- installer npm sur la vagrant
+   - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+   - sudo apt-get install -y nodejs
+   - npm install
+- npm run watch
 
 
 ## Auth
