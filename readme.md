@@ -153,6 +153,7 @@
         {
             return $this->belongsToMany('App\<nom1>');
         }
+- si "oneToMany" : pas de tables intermédiaires, ajouter $table->integer('author_id'); à la table books
 
 
 ## Middleware
