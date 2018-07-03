@@ -274,7 +274,7 @@
        -     justify-content: space-around;
        -     &.medium-size.column {
        -        display:none;
-       -        @media (max-width: 500px) {
+       -        @media (@smallSize) {
        -           display: flex;
        -        }
        -        ul {
@@ -284,9 +284,7 @@
        -           }
        -        }
        -     &.base-size {
-       -        @media (max-width: 500px) {
+       -        @media (@smallSize) {
        -            display: none;
-       -        }
-       -      }
-       -   }
-       - }
+
+       - déclarer une variable : @smallSize = max-width: 500px;
