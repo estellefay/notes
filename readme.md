@@ -266,8 +266,8 @@
 - <media name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 - ex de MediaQuery :
     - html :
-       - <nav class="base-size"></nav>
-       - <nav class="medium-size cloumn"></nav>
+       - nav class="base-size"
+       - nav class="medium-size cloumn"
     - MediaQuery :
        - nav {
        -     display: flex;
