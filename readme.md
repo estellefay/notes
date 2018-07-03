@@ -121,6 +121,11 @@
          - remplir les éléments créés avec les données
          - appendchild à la modalContainer
          - penser à remote la classe 'hidden'
+   - public function getOne(Request $request, $id)
+    {
+        $user = User::find($id)->load('lessons');
+        return $user;
+    }
 
 #### create
 - insertForm
