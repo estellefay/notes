@@ -13,11 +13,6 @@
             <input id="password" type="password" name="password" required>
         </div>
         <div>
-            <label>
-                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
-            </label>
-        </div>
-        <div>
             <button type="submit">{{ __('Login') }}</button>
             <a href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}</a>
         </div>
