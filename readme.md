@@ -259,3 +259,34 @@
 - https://developer.mozilla.org/fr/docs/Web/HTML/Element
 
 #### CSS/MediaQueries
+- min à 400px (outil de chrome : si ça correspond au Samsung Galaxy S5)
+- vh/vw, %, px
+- ex : on peut mettre une height de 10vh au header, mais un max-height de 200px
+- On crée d'abord un code qui va se gérer, c'est uniquement lorsque le visuel ne convient plus qu'on fait des MediaQueries
+- <media name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+- ex de MediaQuery :
+    - html :
+       - <nav class="base-size"></nav>
+       - <nav class="medium-size cloumn"></nav>
+    - MediaQuery :
+       - nav {
+       -     display: flex;
+       -     justify-content: space-around;
+       -     &.medium-size.column {
+       -        display:none;
+       -        @media (max-width: 500px) {
+       -           display: flex;
+       -        }
+       -        ul {
+       -           flex-direction: column;
+       -           li {
+       -              etc...
+       -           }
+       -        }
+       -     &.base-size {
+       -        @media (max-width: 500px) {
+       -            display: none;
+       -        }
+       -      }
+       -   }
+       - }
