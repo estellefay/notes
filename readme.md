@@ -107,6 +107,21 @@
    - penser à ajouter <input type="hidden" name="id">
 
 
+## Ajouter une image
+#### php artisan storage:link
+- html insert :
+   - <form action="/book/insert" method="POST" enctype="multipart/form-data">
+   - <div>
+        <label for="img">Image :</label>
+        <input type="file" id="img" name="img">
+    </div>
+ - controller :
+   - insertOne
+      - use Illuminate\Support\Facades\Storage;
+      - $path = $request->file('img')->storeAs('public/img', $request->file('img')->getClientOriginalName());
+ - html show :
+   - <div><img src="{{ asset('/storage/img/' . $value->img ) }}"></div>
+
 ## BDD
 #### php artisan make:migration create_<noms>_table
 - remplir les tables
